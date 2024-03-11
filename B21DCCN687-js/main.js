@@ -558,9 +558,7 @@ const saveQuestion = (examId, questionId) => {
   closePopUp();
 };
 
-const delExam = (event, id) => {
-  event.preventDefault();
-
+const delExam = (id) => {
   const examId = id || new URLSearchParams(window.location.search).get("id");
   document.addEventListener("DOMContentLoaded", loadManageExamPage(examId));
 
